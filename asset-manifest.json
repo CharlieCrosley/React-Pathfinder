@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Pathfinder/static/css/main.59c5da18.css",
+    "main.js": "/React-Pathfinder/static/js/main.a2f8dd28.js",
+    "index.html": "/React-Pathfinder/index.html",
+    "main.59c5da18.css.map": "/React-Pathfinder/static/css/main.59c5da18.css.map",
+    "main.a2f8dd28.js.map": "/React-Pathfinder/static/js/main.a2f8dd28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59c5da18.css",
+    "static/js/main.a2f8dd28.js"
+  ]
+}
