@@ -1,0 +1,118 @@
+.node {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-right: 1px solid rgb(175, 216, 248);
+    border-bottom: 1px solid rgb(175, 216, 248);
+
+    /* stop nodes dragging when holding click */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.node-visited {
+    animation-name: visitedKeyframes;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.node-visited-instant {
+    background-color: rgba(0, 190, 218, 0.75);
+}
+
+@keyframes visitedKeyframes {
+    0% {
+        transform: scale(0.7);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 2px;
+    }
+
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+        border-radius: 3px;
+    }
+
+    75% {
+        transform: scale(1.1);
+        background-color: rgba(0, 217, 159, 0.75);
+        border-radius: 2px;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 190, 218, 0.75);
+        border-radius: 0px;
+    }
+}
+
+.node-wall {
+    animation-name: wallKeyframes;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    background-color: rgb(12, 53, 71);
+}
+
+@keyframes wallKeyframes {
+    0% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.node-wall-instant {
+    background-color: rgb(12, 53, 71);
+}
+
+.node-shortest-path {
+    animation-name: shortestPathKeyframes;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.node-shortest-path-instant {
+    background-color: rgb(255, 254, 106);
+}
+
+@keyframes shortestPathKeyframes {
+    0% {
+        transform: scale(0.6);
+        background-color: rgb(255, 254, 106);
+        border-radius: 2px;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: rgb(255, 254, 106);
+        border-radius: 3px;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgb(255, 254, 106);
+        border-radius: 0px;
+    }
+}
+
+.node-start {
+    background-color: #52b025;
+}
+
+.node-finish {
+    background-color: rgb(255, 80, 80);
+}
