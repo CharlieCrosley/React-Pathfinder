@@ -1,6 +1,6 @@
 import { getNeighbors } from "./Utility";
 
-export default function DFS(grid, startNode) {
+export default function BFS(grid, startNode) {
     const visitedNodesInOrder = [];
     const stack = [];
     stack.push(startNode);
