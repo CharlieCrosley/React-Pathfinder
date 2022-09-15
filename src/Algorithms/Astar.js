@@ -3,7 +3,7 @@ import { getNeighbors } from "./Utility";
 // Performs A* algorithm. Also makes nodes point back to their
 // previous node, effectively allowing us to compute the shortest path
 // by backtracking from the finish node.
-export default function astar(grid, startNode, finishNode) {
+export default function Astar(grid, startNode, finishNode) {
     const visitedNodesInOrder = [];
     const openSet = [];
     startNode.g = 0;
